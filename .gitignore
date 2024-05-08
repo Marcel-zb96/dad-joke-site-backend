@@ -1,6 +1,7 @@
 # env files
-server/.env
-server/repository/populate/.env
+node_modules/
+.env
+repository/populate/.env
 
 # Logs
 logs
