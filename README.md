@@ -148,7 +148,7 @@ npm install
     TOKEN_SECRET=<Your token secret for JWT>
   ```
 
-  - Rename the .sample.env file in the `repository/populate` directory and fill in the variable values:
+  - Rename the `.sample.env` file to `.env` in the `repository/populate` directory and fill in the variable values:
   ```
     MONGO_URL=<Your connection string to mongo db>
     TOKEN_SECRET=<Your token secret for JWT>
