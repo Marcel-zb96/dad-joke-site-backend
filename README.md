@@ -118,7 +118,7 @@
 
 Ensure you have the following dependencies installed on your system:
 
-* **NodeJs**: `v18.16.0`
+* **NodeJs**: [Guide for installing NodeJS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
 * **MongoDb** 
 
 ###  Installation
