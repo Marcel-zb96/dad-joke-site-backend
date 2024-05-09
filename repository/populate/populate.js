@@ -43,7 +43,7 @@ const populateJokes = async () => {
 }
 
 const main = async () => {
-  await mongoose.connect(mongoUrl);
+  await mongoose.connect(mongoUrl + 'mad_joke');
   await populateUsers();
   await populateJokes();
 

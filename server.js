@@ -25,7 +25,7 @@ app.use('/api/user', UserRouter);
 
 const main = async () => {
   try {
-    await mongoose.connect(MONGO_URL);
+    await mongoose.connect(MONGO_URL + 'mad_joke');
     app.listen(PORT, () => {
       console.log("App is listening on 3000");
     });
