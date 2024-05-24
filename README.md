@@ -31,7 +31,7 @@
 ##  Overview
 
   This project was created for learning purposes with the following tecnologies: NodeJs, ExpressJs, MongooseJs. 
-  It's created for handleing requests made to the api/jokes and api/users endpoints.
+  It's created for handling requests made to the `api/jokes` and `api/users` endpoints.
 
 ##  Features
 
@@ -39,31 +39,6 @@
   - Joke serving: based on authorization serving parsed jokes with or without puchline.
   - Signing: user sign up and logging in.
   - Database: storing users and jokes in MongoDb using MongooseJs library.
-
-##  Repository Structure
-
-```sh
-└── dad-joke-site-backend/
-    ├── controller
-    │   ├── jokeController.js
-    │   └── userController.js
-    ├── repository
-    │   ├── jokes.model.js
-    │   ├── populate
-    │   │   ├── Jokes.json
-    │   │   └── populate.js
-    │   └── user.model.js
-    ├── security
-    │   └── authentication.js
-    └── util
-        └── util.js
-    ├── server.js
-    ├── package-lock.json
-    ├── package.json
-    ├── README.md
-```
-
----
 
 ##  Modules
 
@@ -118,8 +93,8 @@
 
 Ensure you have the following dependencies installed on your system:
 
-* **NodeJs**: `v18.16.0`
-* **MongoDb** 
+* **NodeJs**: [Guide for installing NodeJS](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+* **MongoDb**: [Guide for installing MongoDB](https://www.mongodb.com/docs/manual/installation/)
 
 ###  Installation
 
@@ -142,11 +117,13 @@ npm install
 ```
 4. Set environment variables:
 
-  - Rename the `.sample.env` file to `.env` in the root directory and fill in the variables:
+  - Rename the `.sample.env` file to `.env` in the `root` directory and fill in the variables:
   ```
     MONGO_URL=<Your connection string to mongo db>
     TOKEN_SECRET=<Your token secret for JWT>
   ```
+
+5.  In case you want to prepolulate MongoDB:
 
   - Rename the `.sample.env` file to `.env` in the `repository/populate` directory and fill in the variable values:
   ```
@@ -154,13 +131,10 @@ npm install
     TOKEN_SECRET=<Your token secret for JWT>
   ```
 
-6. Prepolulate MongoDB:
-
-```sh
-In the root directory run the following command:
-
-node repository/populate/populate.js
-```
+  - In the root directory run the following command:
+  ```sh
+  node repository/populate/populate.js
+  ```
 
 ###  Running dad-joke-site-backend
 
