@@ -82,6 +82,11 @@ router.post('/register', async (req, res) => {
   const lastName = req.body.lastName;
   const hashedPw = await bcrypt.hash(req.body.password, 10);
   const createdAt = Date.now();
+
+  if (email === '' || userName === '' || firstName === '' || lastName === '' || req.body.password === '') {
+    return res.status(500).json({ success: false, message: 'Fields are missing' })
+  }
+
   const user = new UserModel({
     userName,
     firstName,

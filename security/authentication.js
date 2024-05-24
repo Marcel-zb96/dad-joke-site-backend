@@ -24,7 +24,7 @@ const shouldAuthenticate = (req, res, next) => {
   if (req.autenticated) {
     next();
   } else {
-    return res.sendStatus(401).json({ message: 'Authentication failed' });
+    return res.status(401).json({ message: 'Authentication failed' });
   }
 }
 

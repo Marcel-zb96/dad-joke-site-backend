@@ -22,7 +22,6 @@ router.get('/', async (req, res) => {
         ? getParsedJokeAuth(joke._doc, user)
         : getParsedJokeNonAuth(joke._doc)
     });
-
     res.status(200).json(resultJokes);
 
   } catch (err) {
